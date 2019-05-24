@@ -5,5 +5,4 @@
        - image: circleci/node:latest
      steps:
        - checkout
-       - run: echo "Installing Dependencies"
-       - run: "npm install"
+       - run: "npm install && npm run build"
