@@ -1,17 +1,18 @@
 import React from "react";
 import PropTypes from "prop-types";
+import "./Presentational.css";
 
-const Presentational = ({ title }) => {
+const Presentational = ({ count }) => {
     return (
         <section id="presentational">
-            <h3>{title}</h3>
-            <p>This is a presentational component</p>
+            <p>Presentational component</p>
+            <span>Count: {count}</span>
         </section>
     )
 }
 
 Presentational.propTypes = {
-    title: PropTypes.string.isRequired
+    count: PropTypes.number.isRequired
 }
 
 export default Presentational;
